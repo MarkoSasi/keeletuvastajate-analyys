@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "estonian-english-codeswitch"
+version = "0.1.0"
+description = ""
+requires-python = ">=3.11"
+authors = [{ name = "Marko Sasi" }]
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = [
+  "config",
+  "scraper",
+  "sentence_processor",
+  "language_detector",
+  "exporter",
+  "identifier_suite",
+  "utils",
+]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }

@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Models (fetched via scripts/download_models.py, never committed)
+/models/
+/lid.176.bin
+*.bin
+
+# Runtime artifacts
+*.checkpoint.json
+*.log
+*.tmp
+/data/raw/
+/data/cache/
+/outputs/
+
+# Vestluskorpus (litsentsi/levitamise piirangud — reviewer hangib eraldi)
+/data/chat/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Vendored build artifacts
+evaluation/gcld3*/
+evaluation/gcld3*.tar.gz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Secrets / personal
+.env
+github-recovery-codes.txt
+
