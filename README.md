@@ -2,7 +2,7 @@
 
 Lõputöö reprodutseerimiseks vajalik: kaks skripti — üks
 Redditi korpuse kogumiseks, teine kõikide 12 keeletuvastaja
-hindamiseks Redditi ja vestluskorpusel.
+hindamiseks Redditi ja tšätikorpusel.
 
 ---
 
@@ -34,7 +34,7 @@ Skript kasutab 12. tuvastajat (`pycld2`, `heliport`, `lingua`,
 `masklid`, `lingua-mixed`, `masklid-cs`, `ane-lid`) 
 
 **Sisendid** (vaikimisi):
-- `data/chat/chat_tsv/` — 110 annoteeritud vestlusfaili
+- `data/chat/chat_tsv/` — 110 märgendatud vestlusfaili
 - `evaluation/reddit_margendus.xlsx` — Redditi kuldstandard
 
 **Väljundid**:
@@ -47,7 +47,7 @@ ennustuste võrdlus).
 
 Tööaeg esimesel käivitamisel ≈ 5–15 min 
 
-### 2. Värske Redditi korpuse kogumine (valikuline)
+### 2. Värske Redditi korpuse kogumine
 
 ```bash
 python scripts/run_multi_identifier.py \
@@ -103,12 +103,9 @@ katkestamise järel jätkata.
 ├── data/
 │   ├── README.md                     ← andmete kirjeldus ja kasutustingimused
 │   ├── reddit/
-│   │   └── eesti_reddit_codeswitch_2500.xlsx     ← lõputöös kasutatud Redditi korpus
-│   └── chat/chat_tsv/                            ← 110 märgendatud vestlusfaili
+│   └── chat/chat_tsv/                            
 │
 └── expected_results/
-    ├── reddit_full_report.xlsx                   ← lõputöös kajastatud Redditi mõõdikud
-    └── chat_tsv_full_report.xlsx                 ← lõputöös kajastatud vestluskorpuse mõõdikud
 ```
 
 ---
